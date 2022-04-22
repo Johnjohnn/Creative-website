@@ -199,6 +199,12 @@ html {
      padding:1rem 1rem 2rem 1rem;
      box-shadow:1rem 1rem 2rem #ddd,
      -1rem -1rem 2rem #eee;
+     position: relative;
+     opacity: .7;
+     transition: opacity .5s;
+}
+.team-member:hover{
+    opacity: 1;
 }
 .team-member-img {
     width: 100%;
@@ -216,6 +222,12 @@ margin:1rem 0 2rem 0;
     font-size: 1.5rem;
     color:#505050;
 }
+.team-member:first-child{
+    align-self: flex-start;
+}
+.team-member:last-child{
+    align-self: flex-end;
+}
 .projects-btn {
     background-color: #fab34a;
     color: #fff;
@@ -231,6 +243,59 @@ margin:1rem 0 2rem 0;
     margin-top: 2rem;
 }
 .story{
-    display: none;
+width: 100%;
+height: 100%;
+background-color: rgba(253, 69, 69, 0.9);
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+transition:all 0.5s;
+transform: scale(0);
+transform-origin: top left;
+}
+.story-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+
+}
+.story-paragraph {
+    font-size: 1.8rem;
+    color: #eee;
+    text-align: justify;
+    letter-spacing: .5rem;
+    text-indent: 2rem;
+}
+.story-btn {
+width: 4rem;
+height: 4rem;
+background-color: #222;
+position: absolute;
+top:-1rem;
+left:-1rem;
+border-radius: 5rem;
+display: flex;
+align-items: center;
+padding: .5rem;
+cursor: pointer;
+transition: transform 0.5s;
+z-index: 10;
+}
+.change.story-btn {
+    transform: rotate(405deg);
+}
+.change.story{
+    transform: scale(1);
+}
+.story-btn-line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
 }
 /* End of Section 3 */ 
