@@ -17,6 +17,7 @@
 }
 html {
  font-size: 62.5%;   
+ scroll-behavior: smooth;
 }
 /* Common styles End*/
 /* section 1*/
@@ -96,7 +97,7 @@ html {
 .logo {
     position: absolute;
     top:70%;
-    left:50%;
+    left:45%;
     transform: translateX(50,231,255,0.8);
 }
 .logo i {
@@ -385,5 +386,21 @@ background-color: #32e7ff;
     letter-spacing: 0.2rem;
     color: #444;
     margin-top: 5rem;
+}
+.scroll-up-btn{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(50, 231, 255, 0.8);;
+    position: fixed;
+    bottom: 5rem;
+    right:5rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+    color:white;
+    transition: background-color 1.5sec;
+}
+.scroll-up-btn:hover{
+    background-color: #32e7ff;
 }
 /* End of Section 4 */ 
