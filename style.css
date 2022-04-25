@@ -18,6 +18,7 @@
 html {
  font-size: 62.5%;   
  scroll-behavior: smooth;
+ overflow-x: hidden;
 }
 /* Common styles End*/
 /* section 1*/
@@ -404,3 +405,34 @@ background-color: #32e7ff;
     background-color: #32e7ff;
 }
 /* End of Section 4 */ 
+
+
+/* Responsive */
+@media(max-width:1400px){
+    .section-1-heading {
+     font-size: 6rem;
+     top:25vw;
+     width: 70rem;   
+    }
+    .navbar-link {
+        font-size: 2rem;
+    }
+    .logo {
+        font-size: 10rem;
+    }
+    .section-heading {
+        font-size: 8rem;
+        margin-bottom:10rem;
+    }
+    .section-2{
+        height: auto;
+
+    }
+    .customers-wrapper{
+        flex-wrap: wrap;
+    }
+    .customer{
+        margin: 5rem 10rem;
+    }
+} 
+/* End of Section Responsive */ 
